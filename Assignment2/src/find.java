@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class find {
-  void count(String a, char b){
+  int count(String a, char b){
 		int count = 0;
 		char[] c = a.toCharArray();
 		for(int i=0;i<c.length;i++){
@@ -9,6 +9,7 @@ public class find {
 			}
 		}
 		System.out.println(a+" has "+count+" '"+b+"' .");
+		return count;
 	}
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);

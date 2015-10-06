@@ -1,8 +1,9 @@
 import java.util.Scanner;
 public class numdigits {
-	void count(int a){
+	int count(int a){
 		char[] c = String.valueOf(a).toCharArray();
 		System.out.println(a+" has "+ c.length+ " digits");
+	return c.length;
 	}
 		public static void main(String[] args) {
 		
