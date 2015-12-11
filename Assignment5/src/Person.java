@@ -34,7 +34,9 @@ public class Person implements Comparable<Person> {
 	public Person() {
 		
 	}
+
 	@Override
+	// this is wrong, hashcode cannot be used to compare which one is larger. -2
 	public int compareTo(Person P){
 	
 		if(this.hashCode()>P.hashCode()){
@@ -54,6 +56,7 @@ public class Person implements Comparable<Person> {
 		code=31*code+lastName.hashCode();
 		return code;
 	}
+	//where is @Override? -3
 	public boolean equals(Person P){
 		
 		if(this.getfirstName().equals(P.getfirstName())&&this.getlastName().equals(P.getlastName())){
