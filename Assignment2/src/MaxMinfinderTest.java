@@ -12,6 +12,7 @@ public class MaxMinfinderTest {
 		assertEquals(14,b);
 	}
 
+
 	@Test
 	public void testGetMin() {
 		MaxMinfinder mmf=new MaxMinfinder();
